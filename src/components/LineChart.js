@@ -69,6 +69,11 @@ const LineChart = () => {
                 },
             },
         },
+        plugins: {
+            legend: {
+                position: 'bottom'
+            }
+        }
     };
 
     if (!chartData) {
