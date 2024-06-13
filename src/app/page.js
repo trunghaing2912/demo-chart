@@ -7,7 +7,7 @@ const {Title} = Typography
 
 export default function Home() {
   return (
-    <Layout>
+    <Layout style={{minHeight: "100vh"}}>
       <Title level={4} className="text-center m-3" style={{marginBottom: "2rem"}}>Biểu đồ bán hàng</Title>
       <LineChart/>
     </Layout>
