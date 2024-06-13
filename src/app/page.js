@@ -8,7 +8,7 @@ const {Title} = Typography
 export default function Home() {
   return (
     <Layout>
-      <Title level={4} className="text-center m-3">Biểu đồ bán hàng</Title>
+      <Title level={4} className="text-center m-3" style={{marginBottom: "2rem"}}>Biểu đồ bán hàng</Title>
       <LineChart/>
     </Layout>
   );

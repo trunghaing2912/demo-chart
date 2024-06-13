@@ -44,7 +44,7 @@ const LineChart = () => {
                 ticks: {
                     beginAtZero: true,
                     stepSize: 1000, 
-                    min: 0, 
+                    suggestedMin: 0, 
                     font: {
                         weight: 'bold',
                     },
@@ -59,7 +59,7 @@ const LineChart = () => {
                 ticks: {
                     beginAtZero: true,
                     stepSize: 5, 
-                    min: 0, 
+                    suggestedMin: 0, 
                     callback: function(value) {
                         return value + "%";
                     },
@@ -109,7 +109,7 @@ const LineChart = () => {
 
     return (
         <div>
-            <Chart style={{width: "70vw", margin: "0 auto"}} data={chartData} options={options} />
+            <Chart style={{width: "70vw", margin: "0 auto 4rem "}} data={chartData} options={options} />
             <Table style={{width: "70vw", margin: "0 auto"}} columns={columns} dataSource={dataSource} pagination={false} />
         </div>
     );
